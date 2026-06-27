@@ -24,7 +24,7 @@ const CAMP_DATES_WITH_YEAR = `${CAMP_DATES}, ${CAMP_YEAR}`
 const CAMP_GRADES = 'Rising 4th–9th Graders'
 
 const FORM_URL =
-  'https://docs.google.com/forms/d/e/1FAIpQLSdQ-iyGScxepna0zUVHrnxeNGCUxH_o-8ViwidUaan17BvbKA/viewform?usp=dialog'
+  'https://docs.google.com/forms/d/e/1FAIpQLSemmgzo7KV8uSN3KG-rq1iRcowVij4KSudJ3Rwkw9uV9JcW3w/viewform?usp=publish-editor'
 
 const LAUREN_AVATAR_URL = '/images/lauren-avatar.png'
 const WILL_AVATAR_URL = '/images/will-avatar.png'
