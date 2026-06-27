@@ -1,0 +1,16 @@
+---
+description: Enable /ui generation via 21st Magic MCP
+alwaysApply: true
+---
+
+# Magic `/ui` Skill
+
+When the user asks for `/ui` or requests a new React UI component:
+
+1. Use the MCP tool `21st_magic_component_builder`.
+2. Build `standaloneRequestQuery` with explicit style guidance to match the existing page palette, typography, spacing, and radius.
+3. Prefer component names and structure that fit the current codebase conventions.
+4. After receiving generated code, integrate it into project files and wire imports/usages.
+5. If generated code depends on missing `shadcn/ui` primitives, install only the needed primitives.
+
+When the user asks to improve an existing UI block (not full-page redesign), use `21st_magic_component_refiner`.
