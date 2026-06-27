@@ -279,7 +279,7 @@ export default function App() {
         {/* About The Coaches */}
         <section id="about" className="scroll-mt-28 border-t border-slate-200 bg-gradient-to-b from-sky-50/60 via-white to-blue-50/40 py-24">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
-            <div className="mb-12 max-w-4xl">
+            <div className="mb-16 max-w-4xl">
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">About The Coaches</p>
               <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-slate-900 md:text-5xl">Built by Champions</h2>
               <p className="text-lg leading-relaxed text-slate-600">
@@ -287,9 +287,9 @@ export default function App() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2">
+            <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-2">
               <SpotlightCard
-                className="space-y-6 rounded-3xl border-sky-100 bg-white p-6 shadow-[0_14px_40px_-22px_rgba(14,116,144,0.28)] sm:p-8"
+                className="space-y-8 rounded-3xl border-sky-100 bg-white p-6 shadow-[0_14px_40px_-22px_rgba(14,116,144,0.28)] sm:p-8"
                 glowColor="56, 189, 248"
                 radius="1.5rem"
               >
@@ -298,51 +298,53 @@ export default function App() {
                   alt="Lauren Archer"
                   initials="LA"
                 />
-                <h2 className="mb-2 text-4xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
+                <h2 className="mt-10 text-4xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
                   Lauren Archer
                 </h2>
-                <p className="text-base leading-relaxed text-slate-600 sm:text-lg">
+                <p className="mt-10 mb-10 text-base leading-relaxed text-slate-600 sm:text-lg">
                   Lauren Archer joins camp staff with elite high school and collegiate success, bringing championship-tested
                   technical detail and a high-performance mindset to every session. She is about to enter her senior year and
                   plans to take a graduate year afterwards.
                 </p>
-                <SpotlightCard className="rounded-2xl border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6" glowColor="96, 165, 250" radius="1rem">
-                  <h3 className="mb-4 text-xl font-bold text-slate-900">Collegiate Career & Championships</h3>
-                  <ul className="space-y-3 text-slate-700">
-                    <li><span className="font-semibold text-slate-900">NCAA National Champion</span> | 2026</li>
-                    <li><span className="font-semibold text-slate-900">Big Ten Conference Champion</span> | 2024, 2025, 2026</li>
-                    <li><span className="font-semibold text-slate-900">NCAA National Championship Finalist</span> | 2024, 2025</li>
-                  </ul>
-                </SpotlightCard>
-                <SpotlightCard className="rounded-2xl border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6" glowColor="96, 165, 250" radius="1rem">
-                  <h3 className="mb-4 text-xl font-bold text-slate-900">High School Accolades & Leadership</h3>
-                  <ul className="space-y-3 text-slate-700">
-                    <li><span className="font-semibold text-slate-900">USA Lacrosse All-American</span> | 2023</li>
-                    <li><span className="font-semibold text-slate-900">Jackie Pitts Award Winner</span> | 2023</li>
-                    <li><span className="font-semibold text-slate-900">USA Lacrosse Academic All-American</span> | 2022</li>
-                  </ul>
-                </SpotlightCard>
-                <SpotlightCard className="rounded-2xl border-slate-200 bg-white p-6" glowColor="96, 165, 250" radius="1rem">
-                  <h3 className="mb-3 text-lg font-bold text-slate-900">The Jackie Pitts Award</h3>
-                  <p className="leading-relaxed text-slate-600">
-                    This honor recognizes seniors who elevate their team, school, and community while honoring the game.
-                    It reflects Lauren&rsquo;s leadership both on and off the field.
-                  </p>
-                </SpotlightCard>
-                <SpotlightCard className="rounded-2xl border-slate-200 bg-white p-6" glowColor="96, 165, 250" radius="1rem">
-                  <h3 className="mb-5 text-lg font-bold text-slate-900">Player Field Notes</h3>
-                  <div className="space-y-5">
-                    {laurenPlayerFieldNotes.map((item) => (
-                      <SpotlightCard key={item.year} className="rounded-xl border-sky-100 bg-gradient-to-br from-slate-50 to-white p-5 shadow-sm" glowColor="59, 130, 246" radius="0.75rem">
-                        <p className="inline-flex rounded-full bg-sky-50 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700 ring-1 ring-sky-200">{item.year}</p>
-                        <p className="mt-2 leading-relaxed text-slate-700">{item.summary}</p>
-                      </SpotlightCard>
-                    ))}
-                  </div>
-                </SpotlightCard>
+                <div className="space-y-10">
+                  <SpotlightCard className="rounded-2xl border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6" glowColor="96, 165, 250" radius="1rem">
+                    <h3 className="mb-4 text-xl font-bold text-slate-900">Collegiate Career & Championships</h3>
+                    <ul className="space-y-3 text-slate-700">
+                      <li><span className="font-semibold text-slate-900">NCAA National Champion</span> | 2026</li>
+                      <li><span className="font-semibold text-slate-900">Big Ten Conference Champion</span> | 2024, 2025, 2026</li>
+                      <li><span className="font-semibold text-slate-900">NCAA National Championship Finalist</span> | 2024, 2025</li>
+                    </ul>
+                  </SpotlightCard>
+                  <SpotlightCard className="rounded-2xl border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6" glowColor="96, 165, 250" radius="1rem">
+                    <h3 className="mb-4 text-xl font-bold text-slate-900">High School Accolades & Leadership</h3>
+                    <ul className="space-y-3 text-slate-700">
+                      <li><span className="font-semibold text-slate-900">USA Lacrosse All-American</span> | 2023</li>
+                      <li><span className="font-semibold text-slate-900">Jackie Pitts Award Winner</span> | 2023</li>
+                      <li><span className="font-semibold text-slate-900">USA Lacrosse Academic All-American</span> | 2022</li>
+                    </ul>
+                  </SpotlightCard>
+                  <SpotlightCard className="rounded-2xl border-slate-200 bg-white p-6" glowColor="96, 165, 250" radius="1rem">
+                    <h3 className="mb-3 text-lg font-bold text-slate-900">The Jackie Pitts Award</h3>
+                    <p className="leading-relaxed text-slate-600">
+                      This honor recognizes seniors who elevate their team, school, and community while honoring the game.
+                      It reflects Lauren&rsquo;s leadership both on and off the field.
+                    </p>
+                  </SpotlightCard>
+                  <SpotlightCard className="rounded-2xl border-slate-200 bg-white p-6" glowColor="96, 165, 250" radius="1rem">
+                    <h3 className="mb-5 text-lg font-bold text-slate-900">Player Field Notes</h3>
+                    <div className="space-y-5">
+                      {laurenPlayerFieldNotes.map((item) => (
+                        <SpotlightCard key={item.year} className="rounded-xl border-sky-100 bg-gradient-to-br from-slate-50 to-white p-5 shadow-sm" glowColor="59, 130, 246" radius="0.75rem">
+                          <p className="inline-flex rounded-full bg-sky-50 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700 ring-1 ring-sky-200">{item.year}</p>
+                          <p className="mt-2 leading-relaxed text-slate-700">{item.summary}</p>
+                        </SpotlightCard>
+                      ))}
+                    </div>
+                  </SpotlightCard>
+                </div>
               </SpotlightCard>
               <SpotlightCard
-                className="space-y-6 rounded-3xl border-sky-100 bg-white p-6 shadow-[0_14px_40px_-22px_rgba(14,116,144,0.28)] sm:p-8"
+                className="space-y-8 rounded-3xl border-sky-100 bg-white p-6 shadow-[0_14px_40px_-22px_rgba(14,116,144,0.28)] sm:p-8"
                 glowColor="56, 189, 248"
                 radius="1.5rem"
               >
@@ -351,53 +353,55 @@ export default function App() {
                   alt="Will Inderlied"
                   initials="WI"
                 />
-                <h2 className="mb-2 text-4xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
+                <h2 className="mt-10 text-4xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
                   Will Inderlied
                 </h2>
-                <p className="text-base leading-relaxed text-slate-600 sm:text-lg">
+                <p className="mt-10 mb-10 text-base leading-relaxed text-slate-600 sm:text-lg">
                   Will combines elite on-field production with academic leadership, bringing clear instruction and high standards
                   to every rep and every player.
                 </p>
-                <SpotlightCard className="rounded-2xl border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6" glowColor="96, 165, 250" radius="1rem">
-                  <h3 className="mb-4 text-xl font-bold text-slate-900">High School Career</h3>
-                  <ul className="space-y-3 text-slate-700">
-                    <li><span className="font-semibold text-slate-900">TCIS Player of the Year</span> | 2021</li>
-                    <li><span className="font-semibold text-slate-900">Team Captain & Team MVP</span> | Senior Year</li>
-                    <li><span className="font-semibold text-slate-900">US Lacrosse Academic All-American</span></li>
-                    <li><span className="font-semibold text-slate-900">FCA National Team</span> | Lake Placid and Vail</li>
-                    <li><span className="font-semibold text-slate-900">Senior Season Production</span> | 43 goals, 22 assists</li>
-                    <li><span className="font-semibold text-slate-900">VISAA First Team All-State</span></li>
-                    <li><span className="font-semibold text-slate-900">Virginia All-Prep League</span></li>
-                    <li><span className="font-semibold text-slate-900">First Team All-TCIS</span></li>
-                  </ul>
-                </SpotlightCard>
-                <SpotlightCard className="rounded-2xl border-slate-200 bg-white p-6" glowColor="96, 165, 250" radius="1rem">
-                  <h3 className="mb-3 text-lg font-bold text-slate-900">Academic Honors</h3>
-                  <ul className="space-y-3 text-slate-700">
-                    <li><span className="font-semibold text-slate-900">ACC Academic Honor Roll</span> | 2023-2024</li>
-                    <li><span className="font-semibold text-slate-900">Doyle Smith Award Recipient</span> | Highest GPA at Virginia Men&rsquo;s Lacrosse annual banquet</li>
-                  </ul>
-                </SpotlightCard>
-                <SpotlightCard className="rounded-2xl border-slate-200 bg-white p-6" glowColor="96, 165, 250" radius="1rem">
-                  <h3 className="mb-5 text-lg font-bold text-slate-900">Player Field Notes & Timeline</h3>
-                  <div className="space-y-5">
-                    {willPlayerFieldNotes.map((item) => (
-                      <SpotlightCard key={item.year} className="rounded-xl border-sky-100 bg-gradient-to-br from-slate-50 to-white p-5 shadow-sm" glowColor="59, 130, 246" radius="0.75rem">
-                        <p className="inline-flex rounded-full bg-sky-50 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700 ring-1 ring-sky-200">{item.year}</p>
-                        <blockquote className="mt-3 border-l-2 border-sky-300 pl-4 text-slate-700 italic leading-relaxed">
-                          {item.quote}
-                        </blockquote>
-                        {item.bullets.length > 0 && (
-                          <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-700">
-                            {item.bullets.map((bullet) => (
-                              <li key={bullet}>{bullet}</li>
-                            ))}
-                          </ul>
-                        )}
-                      </SpotlightCard>
-                    ))}
-                  </div>
-                </SpotlightCard>
+                <div className="space-y-10">
+                  <SpotlightCard className="rounded-2xl border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6" glowColor="96, 165, 250" radius="1rem">
+                    <h3 className="mb-4 text-xl font-bold text-slate-900">High School Career</h3>
+                    <ul className="space-y-3 text-slate-700">
+                      <li><span className="font-semibold text-slate-900">TCIS Player of the Year</span> | 2021</li>
+                      <li><span className="font-semibold text-slate-900">Team Captain & Team MVP</span> | Senior Year</li>
+                      <li><span className="font-semibold text-slate-900">US Lacrosse Academic All-American</span></li>
+                      <li><span className="font-semibold text-slate-900">FCA National Team</span> | Lake Placid and Vail</li>
+                      <li><span className="font-semibold text-slate-900">Senior Season Production</span> | 43 goals, 22 assists</li>
+                      <li><span className="font-semibold text-slate-900">VISAA First Team All-State</span></li>
+                      <li><span className="font-semibold text-slate-900">Virginia All-Prep League</span></li>
+                      <li><span className="font-semibold text-slate-900">First Team All-TCIS</span></li>
+                    </ul>
+                  </SpotlightCard>
+                  <SpotlightCard className="rounded-2xl border-slate-200 bg-white p-6" glowColor="96, 165, 250" radius="1rem">
+                    <h3 className="mb-3 text-lg font-bold text-slate-900">Academic Honors</h3>
+                    <ul className="space-y-3 text-slate-700">
+                      <li><span className="font-semibold text-slate-900">ACC Academic Honor Roll</span> | 2023-2024</li>
+                      <li><span className="font-semibold text-slate-900">Doyle Smith Award Recipient</span> | Highest GPA at Virginia Men&rsquo;s Lacrosse annual banquet</li>
+                    </ul>
+                  </SpotlightCard>
+                  <SpotlightCard className="rounded-2xl border-slate-200 bg-white p-6" glowColor="96, 165, 250" radius="1rem">
+                    <h3 className="mb-5 text-lg font-bold text-slate-900">Player Field Notes & Timeline</h3>
+                    <div className="space-y-5">
+                      {willPlayerFieldNotes.map((item) => (
+                        <SpotlightCard key={item.year} className="rounded-xl border-sky-100 bg-gradient-to-br from-slate-50 to-white p-5 shadow-sm" glowColor="59, 130, 246" radius="0.75rem">
+                          <p className="inline-flex rounded-full bg-sky-50 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700 ring-1 ring-sky-200">{item.year}</p>
+                          <blockquote className="mt-3 border-l-2 border-sky-300 pl-4 text-slate-700 italic leading-relaxed">
+                            {item.quote}
+                          </blockquote>
+                          {item.bullets.length > 0 && (
+                            <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-700">
+                              {item.bullets.map((bullet) => (
+                                <li key={bullet}>{bullet}</li>
+                              ))}
+                            </ul>
+                          )}
+                        </SpotlightCard>
+                      ))}
+                    </div>
+                  </SpotlightCard>
+                </div>
               </SpotlightCard>
             </div>
           </div>
