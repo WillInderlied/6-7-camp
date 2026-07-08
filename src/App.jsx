@@ -247,8 +247,13 @@ export default function App() {
           <HeroOdysseyBg />
           <ParallaxLogoOverlay />
           <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center px-6 lg:px-12">
-          <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 px-5 py-2 text-sm font-semibold text-sky-700 ring-1 ring-sky-200/50 mb-8">
-            {CAMP_DATES_WITH_YEAR}
+          <div className="mb-8 flex flex-col items-center gap-2">
+            <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 px-5 py-2 text-sm font-semibold text-sky-700 ring-1 ring-sky-200/50">
+              {CAMP_DATES_WITH_YEAR}
+            </div>
+            <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 px-5 py-2 text-sm font-semibold text-sky-700 ring-1 ring-sky-200/50">
+              Location TBA soon - Virginia Beach, VA
+            </div>
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-slate-900 mb-6">
             Learn From The <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Champs.</span>
@@ -362,6 +367,13 @@ export default function App() {
                 </p>
                 <div className="space-y-10">
                   <SpotlightCard className="rounded-2xl border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6" glowColor="96, 165, 250" radius="1rem">
+                    <h3 className="mb-4 text-xl font-bold text-slate-900">Collegiate Career</h3>
+                    <ul className="space-y-3 text-slate-700">
+                      <li><span className="font-semibold text-slate-900">NCAA Final 4 Appearance</span> | 2023, 2024</li>
+                      <li><span className="font-semibold text-slate-900">ACC Champions</span> | 2026</li>
+                    </ul>
+                  </SpotlightCard>
+                  <SpotlightCard className="rounded-2xl border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6" glowColor="96, 165, 250" radius="1rem">
                     <h3 className="mb-4 text-xl font-bold text-slate-900">High School Career</h3>
                     <ul className="space-y-3 text-slate-700">
                       <li><span className="font-semibold text-slate-900">TCIS Player of the Year</span> | 2021</li>
@@ -457,6 +469,37 @@ export default function App() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Exclusive Giveaways */}
+        <section className="border-t border-slate-200 bg-gradient-to-b from-white to-sky-50/60 py-16">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12">
+            <SpotlightCard
+              className="rounded-3xl border-sky-100 bg-white p-8 shadow-[0_14px_40px_-22px_rgba(14,116,144,0.28)] sm:p-10"
+              glowColor="56, 189, 248"
+              radius="1.5rem"
+            >
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">
+                Exclusive camp giveaways
+              </p>
+              <h3 className="mt-3 flex items-center gap-3 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
+                <img
+                  src="/images/uva-logo.png"
+                  alt="UVA logo"
+                  className="h-10 w-10 rounded-md object-contain md:h-12 md:w-12"
+                />
+                <span>UVA Team-Issued Gear:</span>
+              </h3>
+              <ul className="mt-8 grid grid-cols-1 gap-4 text-slate-700 sm:grid-cols-2 lg:grid-cols-3">
+                <li className="rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 font-semibold">Helmets</li>
+                <li className="rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 font-semibold">T-shirts</li>
+                <li className="rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 font-semibold">Shorts</li>
+                <li className="rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 font-semibold">Sweatshirts</li>
+                <li className="rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 font-semibold">Sticks</li>
+                <li className="rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 font-semibold">Pads</li>
+              </ul>
+            </SpotlightCard>
           </div>
         </section>
 
