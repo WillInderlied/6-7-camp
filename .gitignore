@@ -4,6 +4,13 @@ dist-ssr
 *.local
 .vercel
 
+# Environment / secrets (never commit)
+.env
+.env.local
+.env.production
+.env*.local
+temp-docx-content.txt
+
 # Logs
 logs
 *.log

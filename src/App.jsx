@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, lazy, Suspense } from 'react'
 import { ContainerScroll } from '@/components/ui/container-scroll-animation'
 import { LiquidGlassButton } from '@/components/ui/liquid-glass-button'
 import ScrollFAQAccordion from '@/components/ui/scroll-faqaccordion'
@@ -6,9 +6,11 @@ import SpotlightCard from '@/components/ui/spotlight-card'
 import HeroOdysseyBg from '@/components/ui/hero-odyssey-bg'
 import ScrollProgressBar from '@/components/ui/scroll-progress-bar'
 import ParallaxLogoOverlay from '@/components/ui/parallax-logo-overlay'
-import { TwentyFirstToolbar } from '@21st-extension/toolbar-react'
-import { ReactPlugin } from '@21st-extension/react'
 import infographicMain from '../Infographic/Infographic Final.png'
+
+const DevToolbar = import.meta.env.DEV
+  ? lazy(() => import('@/components/DevToolbar'))
+  : null
 
 const CAMP_YEAR = 2026
 const CAMP_START = new Date(CAMP_YEAR, 7, 4)
@@ -184,7 +186,11 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#fafbfc] font-sans text-slate-900 antialiased overflow-x-hidden selection:bg-sky-200 selection:text-sky-900">
       <ScrollProgressBar />
-      <TwentyFirstToolbar config={{ plugins: [ReactPlugin] }} />
+      {DevToolbar && (
+        <Suspense fallback={null}>
+          <DevToolbar />
+        </Suspense>
+      )}
       
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 transition-all">
