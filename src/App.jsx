@@ -247,13 +247,10 @@ export default function App() {
           <HeroOdysseyBg />
           <ParallaxLogoOverlay />
           <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center px-6 lg:px-12">
-          <div className="mb-8 flex flex-col items-center gap-2">
-            <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 px-5 py-2 text-sm font-semibold text-sky-700 ring-1 ring-sky-200/50">
-              {CAMP_DATES_WITH_YEAR}
-            </div>
-            <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 px-5 py-2 text-sm font-semibold text-sky-700 ring-1 ring-sky-200/50">
-              Location TBA soon - Virginia Beach, VA
-            </div>
+          <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-sky-50 px-5 py-2 text-sm font-semibold text-sky-700 ring-1 ring-sky-200/50">
+            <span>{CAMP_DATES_WITH_YEAR}</span>
+            <span className="text-sky-400">|</span>
+            <span>Location TBA soon - Virginia Beach, VA</span>
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-slate-900 mb-6">
             Learn From The <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Champs.</span>
