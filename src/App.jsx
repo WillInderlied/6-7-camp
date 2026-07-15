@@ -22,7 +22,7 @@ function formatCampDates(start, end) {
 }
 
 const CAMP_DATES = formatCampDates(CAMP_START, CAMP_END)
-const CAMP_DATES_WITH_YEAR = `${CAMP_DATES}, ${CAMP_YEAR}`
+const CAMP_DATES_WITH_YEAR = `${CAMP_DATES} (Wed-Fri), ${CAMP_YEAR}`
 const CAMP_LOCATION =
   'Birdsong Field - Batten University (formerly Virginia Wesleyan University) - Virginia Beach'
 const CAMP_GRADES = 'Rising 4th–9th Graders'
