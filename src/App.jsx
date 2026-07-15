@@ -13,8 +13,8 @@ const DevToolbar = import.meta.env.DEV
   : null
 
 const CAMP_YEAR = 2026
-const CAMP_START = new Date(CAMP_YEAR, 7, 4)
-const CAMP_END = new Date(CAMP_YEAR, 7, 6)
+const CAMP_START = new Date(CAMP_YEAR, 7, 5)
+const CAMP_END = new Date(CAMP_YEAR, 7, 7)
 
 function formatCampDates(start, end) {
   const month = start.toLocaleString('en-US', { month: 'long' })
@@ -23,6 +23,8 @@ function formatCampDates(start, end) {
 
 const CAMP_DATES = formatCampDates(CAMP_START, CAMP_END)
 const CAMP_DATES_WITH_YEAR = `${CAMP_DATES}, ${CAMP_YEAR}`
+const CAMP_LOCATION =
+  'Birdsong Field - Batten University (formerly Virginia Wesleyan University) - Virginia Beach'
 const CAMP_GRADES = 'Rising 4th–9th Graders'
 
 const FORM_URL =
@@ -256,7 +258,7 @@ export default function App() {
           <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-sky-50 px-5 py-2 text-sm font-semibold text-sky-700 ring-1 ring-sky-200/50">
             <span>{CAMP_DATES_WITH_YEAR}</span>
             <span className="text-sky-400">|</span>
-            <span>Location TBA soon - Virginia Beach, VA</span>
+            <span>{CAMP_LOCATION}</span>
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-slate-900 mb-6">
             Learn From The <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Champs.</span>
